@@ -1,0 +1,24 @@
+{#
+/**
+ * Drift plugin for Craft CMS
+ *
+ * Drift Settings.twig
+ *
+ * @author    Superbig
+ * @copyright Copyright (c) 2017 Superbig
+ * @link      https://superbig.co
+ * @package   Drift
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textareaField({
+    label: 'Tracking code',
+    instructions: 'Get your tracking code from the [install instructions](https://app.drift.com/)',
+    rows: 4,
+    id: 'trackingCode',
+    name: 'trackingCode',
+    value: settings['trackingCode']})
+}}
