@@ -1,37 +1,38 @@
 # Drift plugin for Craft CMS
 
-Integrate Drift.com with Craft
+Integrate [Drift.com](https://drift.com) with Craft
 
-![Screenshot](resources/screenshots/plugin_logo.png)
+![Screenshot](resources/icon.png)
+
+# About Drift
+
+Drift helps your team generate more leads and book meetings faster using messaging.
 
 ## Installation
 
 To install Drift, follow these steps:
 
 1. Download & unzip the file and place the `drift` directory into your `craft/plugins` directory
-2.  -OR- do a `git clone https://github.com/sjelfull/drift.git` directly into your `craft/plugins` folder.  You can then update it with `git pull`
-3.  -OR- install with Composer via `composer require sjelfull/drift`
-4. Install plugin in the Craft Control Panel under Settings > Plugins
-5. The plugin folder should be named `drift` for Craft to see it.  GitHub recently started appending `-master` (the branch name) to the name of the folder for zip file downloads.
+2. Install plugin in the Craft Control Panel under Settings > Plugins
+3. The plugin folder should be named `drift` for Craft to see it.
 
 Drift works on Craft 2.4.x and Craft 2.5.x.
 
-## Drift Overview
-
--Insert text here-
-
 ## Configuring Drift
 
--Insert text here-
+[Get an account first with Drift.](https://drift.com/).
+Then, add your tracking code in the plugin settings. You can get it from the [dashboard](https://app.drift.com/)
 
 ## Using Drift
 
--Insert text here-
+Simply insert the template hook into your main layout file, right before the `</body>` end tag:
+
+```twig
+{% hook 'drift' %}
+```
 
 ## Drift Roadmap
 
-Some things to do, and ideas for potential features:
-
-* Release it
+- Add Commerce stats (order #, LTV, etc.) to users
 
 Brought to you by [Superbig](https://superbig.co)
